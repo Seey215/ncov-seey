@@ -1,0 +1,33 @@
+{
+  "name": "egg-src",
+  "version": "1.0.0",
+  "description": "This is a simple project based on Egg.js and RBAC model, which is in line with the development specifications.",
+  "main": "index.js",
+  "egg": {  
+    "declarations": true
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-login",
+    "stop": "egg-scripts stop --title=egg-server-login",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test:local",
+    "test:local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "dependencies": {
+    "egg": "^3.29.0",
+    "egg-scripts": "2",
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^2.0.2",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "egg-bin": "^6.13.0",
+    "eslint": "9",
+    "eslint-config-egg": "13"
+  },
+  "author": "seey215",
+  "license": "MIT"
+}
